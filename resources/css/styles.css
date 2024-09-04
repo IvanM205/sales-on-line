@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header */
+
+header {
+  position: sticky;
+  width: 100%;
+  height: 5.3125rem;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  padding: 0rem;
+  align-items: center;
+  height: 100%;
+}
+
+header .logo {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  margin: 0rem 1rem;
+}
+
+header .logo img {
+  height: 80%;
+}
+
+header .name {
+  margin: 0rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+header .desktop {
+  display: flex;
+  margin: 0rem auto;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+}
+
+/* Introduction Banner Section */
+
+#Introduction {
+  background-image: url('../images/hero/image7.png');
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#Introduction .content {
+  position: relative;
+  top: 5rem;
+  background-color: rgba( 0, 127, 255, 0.5);
+  padding: 3rem;
+  border: 0.1rem solid rgba( 0, 127, 255, 0.75);
+  border-radius: 4rem;
+  color: white;
+}
+
+#Introduction .content .bold {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#Introduction .content .cursive {
+  font-size: 1.75rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+#Introduction .content .special {
+  font-size: 1.75rem;
+  font-weight: normal;
+  text-align: center;
+}
+/* Benefits Section */
+
+#Benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.benefit-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: azure;
+  height: 16rem;
+  padding: 3rem 1rem 2rem 2rem;
+  text-align: center
+}
+
+.benefit-box img {
+  height: auto;
+  max-width: 4rem;
+  margin: 1rem auto;
+}
+
+/* Benefits Section */
+
+#SalesOnLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#SalesOnLine h2 {
+  margin: 2rem auto 1rem auto;
+  text-align: stretch;
+  font-size: 2.5rem;
+}
+
+#SalesOnLine p {
+  padding: 1rem 5rem;
+  text-align: stretch;
+  margin-top: 0rem;
+}
+
+#SalesOnLine h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#SalesOnLine img {
+  width: 100%;
+  height: auto;
+}
+
+#sol-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sol-box {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-container {
+  width: 50%;
+}
+
+.text-container h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#SalesOnLine figure {
+  width: 30%;
+}
+
+#linda {
+  background-color: azure;
+}
+
+#elevation {
+  background-color: azure;
+}
+
+/* Services Section */
+
+#Services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+}
+
+/* How It Works Section */
+
+#How-It-Works{
+  background-color: azure;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works p {
+  text-align: center;
+}
+
+/* Reserve Section */
+
+#Reserve {
+  background-color: white;
+  padding: 1rem 5rem;
+}
+
+#Reserve .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Reserve h3, p {
+  text-align: center;
+}
+
+
+/* FAQ Section */
+
+#FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#FAQ h3, p {
+  text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #043A7E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 5rem;
+  font-size: 1rem;
+}
