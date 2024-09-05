@@ -12,6 +12,31 @@ body {
   padding: 0px;
 }
 
+@font-face {
+  font-family: Inconsolata;
+  src: url("../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: Popins-italic;
+  src: url('../fonts/Poppins/Poppins-Italic.ttf');
+}
+
 /* Header */
 
 header {
@@ -19,7 +44,7 @@ header {
   width: 100%;
   height: 5.3125rem;
   border-bottom: solid 1px #c6c1c1;
-  background-color: white;
+  background-color: rgba(219, 244, 247, 1);
 }
 
 header .content {
@@ -38,17 +63,18 @@ header .logo {
 
 header .logo img {
   height: 80%;
+  border-radius: 2rem;
 }
 
 header .name {
   margin: 0rem 1rem;
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Arial Narrow Bold', sans-serif;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 header .desktop {
-  display: flex;
+  display: inline-block;
   margin: 0rem auto;
 }
 
@@ -56,6 +82,32 @@ header .mobile {
   display: none;
 }
 
+header .desktop ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul a {
+  margin: 0rem 1rem;
+  font-family: 'Lato';
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+header ul a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+header ul a:active {
+  font-size: 0.9rem;
+}
 /* Main */
 
 main {
@@ -90,24 +142,27 @@ main {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  font-family: 'Poppins-bold', sans-serif;
 }
 
 #Introduction .content .cursive {
   font-size: 1.75rem;
   font-weight: normal;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 #Introduction .content .special {
   font-size: 1.75rem;
   font-weight: normal;
   text-align: center;
+  font-family: 'Poppins-italic', sans-serif;
 }
 /* Benefits Section */
 
 #Benefits {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -115,9 +170,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: azure;
-  height: 16rem;
-  padding: 3rem 1rem 2rem 2rem;
+  align-items: center;
+  background-color: rgba(219, 244, 247, 1);
+  height: 20rem;
+  padding: 3rem 1rem 3rem 1rem;
   text-align: center
 }
 
@@ -127,7 +183,20 @@ main {
   margin: 1rem auto;
 }
 
-/* Benefits Section */
+.benefit-box h3 {
+  font-size: 1.3rem;
+  font-family: 'Poppins-bold', sans-serif;
+  font-weight: bold;
+}
+
+.benefit-box p {
+  width: 70%;
+  font-family: 'Lato', sans-serif;
+  text-align: stretch;
+  line-height: 1.6;
+}
+
+/* SalesOnLine Section */
 
 #SalesOnLine {
   display: flex;
@@ -137,20 +206,32 @@ main {
 }
 
 #SalesOnLine h2 {
-  margin: 2rem auto 1rem auto;
+  margin: 3rem auto 1rem auto;
   text-align: stretch;
   font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 #SalesOnLine p {
   padding: 1rem 5rem;
   text-align: stretch;
   margin-top: 0rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  text-align: stretch;
+  line-height: 1.6;
+  width: 85%;
 }
 
 #SalesOnLine h3 {
+  background-color: rgba(0, 127, 255, 1);
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   text-align: center;
+  font-family: 'Poppins-bold', sans-serif;
 }
 
 #SalesOnLine img {
@@ -163,42 +244,93 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .sol-box {
+  background-color: rgba(219, 244, 247, 1);
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
+}
+
+#challenges {
+  flex-direction: row;
+  background-color: white;
 }
 
 .text-container {
-  width: 50%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-container h4 {
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins-bold', sans-serif;
+  font-weight: bold;
+}
+
+.text-container p {
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  text-align: stretch;
+  line-height: 1.6;
 }
 
 #SalesOnLine figure {
-  width: 30%;
-}
-
-#linda {
-  background-color: azure;
-}
-
-#elevation {
-  background-color: azure;
+  max-width: 40%;
+  height: auto;
 }
 
 /* Services Section */
 
 #Services {
+  height: 35rem;
+  background-color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
+  background-color: rgba(0, 127, 255, 1);
+  height: 90%;
+  border-radius: 2rem;
+  margin: 2rem 2rem;
+}
+
+.service-box h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Poppins-bold', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.service-box p {
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Poppins-italic', sans-serif;
+  color: white;
+}
+
+.service-box ul {
+  width: 90%;
+  height: 20rem;
+  background-color: rgba(219, 244, 247, 1);
 }
 
 /* How It Works Section */
@@ -255,7 +387,7 @@ main {
 /* Footer */
 
 footer {
-  background-color: #043A7E;
+  background-color: rgba(0, 127, 255, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,4 +395,6 @@ footer {
   color: white;
   height: 5rem;
   font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  word-spacing: 0.15rem;
 }
