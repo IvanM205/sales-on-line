@@ -108,6 +108,25 @@ header ul a:hover {
 header ul a:active {
   font-size: 0.9rem;
 }
+
+@media only screen and (max-width: 920px) {
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: inline-block;
+    margin: 0rem auto;
+  }
+
+  header .mobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
 /* Main */
 
 main {
@@ -292,7 +311,7 @@ main {
 /* Services Section */
 
 #Services {
-  height: 35rem;
+  height: 40rem;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -307,6 +326,7 @@ main {
   align-items: center;
   background-color: rgba(0, 127, 255, 1);
   height: 90%;
+  width: 33%;
   border-radius: 2rem;
   margin: 2rem 2rem;
 }
@@ -321,7 +341,9 @@ main {
 
 .service-box p {
   width: 80%;
+  height: 3rem;
   text-align: center;
+  vertical-align: center;
   font-size: 1rem;
   font-family: 'Poppins-italic', sans-serif;
   color: white;
@@ -331,6 +353,24 @@ main {
   width: 90%;
   height: 20rem;
   background-color: rgba(219, 244, 247, 1);
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "Lato";
+  text-align: stretch;
+  vertical-align: center;
+  overflow: scroll;
+}
+
+.service-box li {
+  margin: 1rem auto ;
+}
+
+#Services .price {
+  font-family: "Poppins-bold";
+  font-size: 1.3rem;
+  color: white;
 }
 
 /* How It Works Section */
@@ -344,30 +384,93 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem auto;
 }
 
-.how-it-works p {
+.how-it-works h3 {
+  font-size: 2rem;
   text-align: center;
+  font-family: 'Poppins-bold', sans-serif;
+}
+.how-it-works p {
+  padding: 1rem 5rem;
+  text-align: stretch;
+  margin-top: 0rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  text-align: stretch;
+  line-height: 1.6;
+  width: 85%;
 }
 
 /* Reserve Section */
 
 #Reserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  padding: 1rem 5rem;
+  padding: 3rem 5rem;
 }
 
 #Reserve .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 127, 255, 1);
+  min-height: 21rem;
+  width: 60%;
+  border-radius: 2rem;
 }
 
-#Reserve h3, p {
+#Reserve h3 {
+  margin-top: 10%;
+  margin-bottom: 1rem;
   text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins-bold', sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
+#Reserve p {
+  margin: 5% auto;
+  width: 80%;
+  max-height: 7rem;
+  text-align: stretch;
+  vertical-align: center;
+  font-size: 1rem;
+  font-family: 'Poppins-italic', sans-serif;
+  line-height: 1.6;
+  color: white;
+  flex-shrink: 2;
+  overflow: scroll;
+}
+
+#Reserve .button {
+  margin: 0rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+#Reserve button {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#Reserve button a:hover {
+  color: rgba(0, 127, 255, 0.25);
+}
+
+#Reserve button a:active {
+  font-size: 0.9rem;
+}
+
+
+#Reserve button a {
+  text-decoration: none;
+  font-family: 'Poppins-bold', sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 127, 255, 1);
+}
 
 /* FAQ Section */
 
@@ -377,10 +480,27 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
+  background-color: background-color: rgba(0, 127, 255, 1);
 }
 
-#FAQ h3, p {
+#FAQ h2 {
+  font-size: 2rem;
   text-align: center;
+  font-family: 'Poppins-bold', sans-serif;s
+}
+
+#FAQ h3 {
+  text-align: start;
+  margin: 1rem 1rem;
+  font-size: 1.3rem;
+  font-family: 'Poppins-italic', sans-serif;
+}
+
+#FAQ p {
+  text-align: start;
+  margin: 1rem 2rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 
